@@ -10,7 +10,15 @@ const routes: Routes = [
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },  {
+    path: 'nike',
+    loadChildren: () => import('./nike/nike.module').then( m => m.NikePageModule)
+  },
+  {
+    path: 'nike2',
+    loadChildren: () => import('./nike2/nike2.module').then( m => m.Nike2PageModule)
   }
+
 ];
 
 @NgModule({
